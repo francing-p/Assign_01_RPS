@@ -14,12 +14,12 @@ public class Game {
                 System.out.print("Player A. Enter your move using [R/P/S] or [r/p/s]: ");
                 moveA = in.nextLine();
             }
-            while(!moveA.equalsIgnoreCase("R") && !moveA.equalsIgnoreCase("P") && !moveA.equalsIgnoreCase("S"));
+            while(!moveA.equalsIgnoreCase("R") && !moveA.equalsIgnoreCase("P") && !moveA.equalsIgnoreCase("S")); // while move is not either r,p,s or R,P,S, continue the loop
             do { // runs until receiving r,p,s or R,P,S
                 System.out.print("Player B. Enter your move using [R/P/S] or [r/p/s]: ");
                 moveB = in.nextLine();
             }
-            while(!moveB.equalsIgnoreCase("R") && !moveB.equalsIgnoreCase("P") && !moveB.equalsIgnoreCase("S"));
+            while(!moveB.equalsIgnoreCase("R") && !moveB.equalsIgnoreCase("P") && !moveB.equalsIgnoreCase("S")); // while move is not either r,p,s or R,P,S, continue the loop
             if (moveA.equalsIgnoreCase("R")) { // outer loop for moveA
                 if (moveB.equalsIgnoreCase("R")) { // inner loop #1 for moveB
                     System.out.println("Rock vs. Rock. Tie");
